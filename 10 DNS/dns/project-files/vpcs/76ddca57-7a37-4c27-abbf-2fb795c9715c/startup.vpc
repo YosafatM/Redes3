@@ -1,0 +1,18 @@
+# This the configuration for PC6B
+
+#
+
+# Uncomment the following line to enable DHCP
+
+# dhcp
+
+# or the line below to manually setup an IP address and subnet mask
+
+# ip 192.168.1.1 255.0.0.0
+
+#
+
+
+
+set pcname PC6B
+ip 10.10.6.20 255.255.255.0 10.10.6.1

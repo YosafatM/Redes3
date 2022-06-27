@@ -1,0 +1,93 @@
+Jun 01 14:12:26.226 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 01 14:12:26.226 HYPERVISOR: Started on IP = localhost, TCP port = 49897.
+Jun 01 14:12:26.711 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 01 14:12:26.711 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\yosaf\OneDrive - Instituto Politecnico Nacional\Universidad\8 Octavo Semestre\Redes Rosales\10 DNS\dns\project-files\dynamips 
+Jun 01 14:12:26.711 GENERAL: working_dir=C:\Users\yosaf\OneDrive - Instituto Politecnico Nacional\Universidad\8 Octavo Semestre\Redes Rosales\10 DNS\dns\project-files\dynamips
+Jun 01 14:12:26.711 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\yosaf\OneDrive - Instituto Politecnico Nacional\Universidad\8 Octavo Semestre\Redes Rosales\10 DNS\dns\project-files\dynamips\6143f11e-9854-4170-b1f6-bd570e4abb61 
+Jun 01 14:12:26.711 GENERAL: working_dir=C:\Users\yosaf\OneDrive - Instituto Politecnico Nacional\Universidad\8 Octavo Semestre\Redes Rosales\10 DNS\dns\project-files\dynamips\6143f11e-9854-4170-b1f6-bd570e4abb61
+Jun 01 14:12:26.711 HYPERVISOR: exec_cmd: vm create Router1 1 c7200 
+Jun 01 14:12:26.711 VM: VM Router1 created.
+Jun 01 14:12:26.711 HYPERVISOR: exec_cmd: vm set_con_tcp_port Router1 5033 
+Jun 01 14:12:26.711 HYPERVISOR: exec_cmd: c7200 get_mac_addr Router1 
+Jun 01 14:12:26.711 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 01 14:12:26.711 HYPERVISOR: exec_cmd: vm slot_add_binding Router1 0 0 C7200-IO-FE 
+Jun 01 14:12:26.711 HYPERVISOR: exec_cmd: vm set_disk0 Router1 0 
+Jun 01 14:12:26.711 HYPERVISOR: exec_cmd: vm set_exec_area Router1 64 
+Jun 01 14:12:26.711 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 01 14:12:26.711 HYPERVISOR: exec_cmd: vm set_idle_pc Router1 0x60796358 
+Jun 01 14:12:26.711 HYPERVISOR: exec_cmd: vm set_ios Router1 C:/Users/yosaf/GNS3/images/IOS/c7200-a3jk9s-mz.124-25g.image 
+Jun 01 14:12:26.711 HYPERVISOR: exec_cmd: c7200 set_mac_addr Router1 ca01.37dc.0000 
+Jun 01 14:12:26.727 HYPERVISOR: exec_cmd: vm set_nvram Router1 512 
+Jun 01 14:12:26.727 HYPERVISOR: exec_cmd: vm set_ram Router1 512 
+Jun 01 14:12:26.727 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 01 14:12:26.727 HYPERVISOR: exec_cmd: vm slot_add_binding Router1 1 0 PA-2FE-TX 
+Jun 01 14:12:26.727 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 01 14:12:26.727 HYPERVISOR: exec_cmd: vm slot_add_binding Router1 2 0 PA-2FE-TX 
+Jun 01 14:12:26.727 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 01 14:12:26.727 HYPERVISOR: exec_cmd: vm slot_add_binding Router1 3 0 PA-2FE-TX 
+Jun 01 14:12:26.727 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 01 14:12:26.727 HYPERVISOR: exec_cmd: vm slot_add_binding Router1 4 0 PA-2FE-TX 
+Jun 01 14:12:26.727 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 01 14:12:26.727 HYPERVISOR: exec_cmd: vm slot_add_binding Router1 5 0 PA-2FE-TX 
+Jun 01 14:12:26.727 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 01 14:12:26.727 HYPERVISOR: exec_cmd: vm slot_add_binding Router1 6 0 PA-2FE-TX 
+Jun 01 14:12:32.341 HYPERVISOR: exec_cmd: nio create_udp udp-c4396eec-8e75-4e22-86cb-10a54d89169d 10026 127.0.0.1 10027 
+Jun 01 14:12:32.594 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router1 1 0 udp-c4396eec-8e75-4e22-86cb-10a54d89169d 
+Jun 01 14:12:32.594 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 01 14:12:32.625 HYPERVISOR: exec_cmd: nio create_udp udp-16e3e59b-f79b-4c07-a80e-d74d996a0adf 10030 127.0.0.1 10031 
+Jun 01 14:12:32.625 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router1 2 0 udp-16e3e59b-f79b-4c07-a80e-d74d996a0adf 
+Jun 01 14:12:32.625 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 01 14:12:32.879 HYPERVISOR: exec_cmd: nio create_udp udp-87125f84-7944-4c3d-ade3-4b1e60f21ce1 10046 127.0.0.1 10047 
+Jun 01 14:12:32.879 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router1 0 0 udp-87125f84-7944-4c3d-ade3-4b1e60f21ce1 
+Jun 01 14:12:32.879 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 01 14:12:39.596 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jun 01 14:12:39.612 VM: VM Ghost created.
+Jun 01 14:12:39.612 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/yosaf/GNS3/images/IOS/c7200-a3jk9s-mz.124-25g.image 
+Jun 01 14:12:39.612 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 01 14:12:39.612 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\yosaf\OneDrive - Instituto Politecnico Nacional\Universidad\8 Octavo Semestre\Redes Rosales\10 DNS\dns\project-files\dynamips\c7200-a3jk9s-mz.124-25g.image-512.ghost 
+Jun 01 14:12:39.612 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Jun 01 14:12:39.612 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 01 14:12:39.612 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jun 01 14:12:39.612 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 01 14:12:39.992 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 01 14:12:39.992 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 01 14:12:40.071 VM: VM Ghost shutdown.
+Jun 01 14:12:40.071 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jun 01 14:12:40.071 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 01 14:12:40.071 VM: VM Ghost destroyed.
+Jun 01 14:12:40.071 HYPERVISOR: exec_cmd: vm set_ghost_status Router1 2 
+Jun 01 14:12:40.071 HYPERVISOR: exec_cmd: vm set_ghost_file Router1 C:\Users\yosaf\OneDrive - Instituto Politecnico Nacional\Universidad\8 Octavo Semestre\Redes Rosales\10 DNS\dns\project-files\dynamips\c7200-a3jk9s-mz.124-25g.image-512.ghost 
+Jun 01 14:12:40.071 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 01 14:12:40.071 HYPERVISOR: exec_cmd: vm set_config Router1 configs\i1_startup-config.cfg 
+Jun 01 14:12:40.071 HYPERVISOR: exec_cmd: vm start Router1 
+Jun 01 14:26:34.614 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 01 14:26:34.614 HYPERVISOR: exec_cmd: vm stop Router1 
+Jun 01 14:26:34.752 VM: VM Router1 shutdown.
+Jun 01 14:26:34.754 HYPERVISOR: exec_cmd: vm extract_config Router1 
+Jun 01 15:17:34.565 HYPERVISOR: exec_cmd: vm set_ghost_status Router1 2 
+Jun 01 15:17:34.565 HYPERVISOR: exec_cmd: vm set_ghost_file Router1 C:\Users\yosaf\OneDrive - Instituto Politecnico Nacional\Universidad\8 Octavo Semestre\Redes Rosales\10 DNS\dns\project-files\dynamips\c7200-a3jk9s-mz.124-25g.image-512.ghost 
+Jun 01 15:17:34.565 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 01 15:17:34.565 HYPERVISOR: exec_cmd: vm set_config Router1 configs\i1_startup-config.cfg 
+Jun 01 15:17:34.565 HYPERVISOR: exec_cmd: vm start Router1 
+Jun 01 21:19:20.207 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 01 21:19:20.207 HYPERVISOR: exec_cmd: vm stop Router1 
+Jun 01 21:19:20.359 VM: VM Router1 shutdown.
+Jun 01 21:19:20.360 HYPERVISOR: exec_cmd: vm extract_config Router1 
+Jun 02 07:14:35.354 HYPERVISOR: exec_cmd: vm set_ghost_status Router1 2 
+Jun 02 07:14:35.354 HYPERVISOR: exec_cmd: vm set_ghost_file Router1 C:\Users\yosaf\OneDrive - Instituto Politecnico Nacional\Universidad\8 Octavo Semestre\Redes Rosales\10 DNS\dns\project-files\dynamips\c7200-a3jk9s-mz.124-25g.image-512.ghost 
+Jun 02 07:14:35.354 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 02 07:14:35.354 HYPERVISOR: exec_cmd: vm set_config Router1 configs\i1_startup-config.cfg 
+Jun 02 07:14:35.354 HYPERVISOR: exec_cmd: vm start Router1 
+Jun 02 07:25:29.590 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 02 07:25:29.591 HYPERVISOR: exec_cmd: vm stop Router1 
+Jun 02 07:25:29.756 VM: VM Router1 shutdown.
+Jun 02 07:25:29.757 HYPERVISOR: exec_cmd: vm extract_config Router1 
+Jun 02 07:28:41.266 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 02 07:28:41.267 HYPERVISOR: exec_cmd: vm extract_config Router1 
+Jun 02 07:28:42.366 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jun 02 07:28:42.369 HYPERVISOR: exec_cmd: vm extract_config Router1 
+Jun 02 07:28:42.373 HYPERVISOR: exec_cmd: vm delete Router1 
+Jun 02 07:28:42.373 VM: VM Router1 destroyed.
+Jun 02 07:28:42.376 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 02 07:28:42.656 HYPERVISOR: Stopped.
+Jun 02 07:28:42.656 GENERAL: reset done.
