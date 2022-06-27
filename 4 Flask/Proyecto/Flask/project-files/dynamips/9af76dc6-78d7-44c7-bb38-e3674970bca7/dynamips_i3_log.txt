@@ -1,0 +1,16 @@
+Mar 28 07:12:19.465 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Mar 28 07:12:19.466 HYPERVISOR: Started on IP = localhost, TCP port = 50881.
+Mar 28 07:12:19.466 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 28 07:12:19.467 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\yosaf\OneDrive - Instituto Politecnico Nacional\Universidad\8 Octavo Semestre\Redes Rosales\4 Flask\Proyecto\Flask\project-files\dynamips 
+Mar 28 07:12:19.467 GENERAL: working_dir=C:\Users\yosaf\OneDrive - Instituto Politecnico Nacional\Universidad\8 Octavo Semestre\Redes Rosales\4 Flask\Proyecto\Flask\project-files\dynamips
+Mar 28 07:12:19.467 HYPERVISOR: exec_cmd: ethsw create SW2 
+Mar 28 07:12:22.438 HYPERVISOR: exec_cmd: nio create_udp udp-b648cd68-6258-405a-b3b0-749823a176ff 10003 127.0.0.1 10002 
+Mar 28 07:12:22.439 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-b648cd68-6258-405a-b3b0-749823a176ff 
+Mar 28 07:12:22.458 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-b648cd68-6258-405a-b3b0-749823a176ff 1 
+Mar 28 07:12:23.205 HYPERVISOR: exec_cmd: nio create_udp udp-32fa5e8d-8638-4adf-8d12-6892f9d6244f 10011 127.0.0.1 10010 
+Mar 28 07:12:23.205 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-32fa5e8d-8638-4adf-8d12-6892f9d6244f 
+Mar 28 07:12:23.211 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-32fa5e8d-8638-4adf-8d12-6892f9d6244f 1 
+Mar 28 07:58:58.929 HYPERVISOR: exec_cmd: ethsw delete SW2 
+Mar 28 07:58:58.977 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 28 07:58:59.055 HYPERVISOR: Stopped.
+Mar 28 07:58:59.055 GENERAL: reset done.
